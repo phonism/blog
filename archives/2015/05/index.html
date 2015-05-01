@@ -30,11 +30,11 @@
 
 
 
-  <title> Tag: tips // LuQi's Blog </title>
+  <title> Archive // LuQi's Blog </title>
 </head>
 
 <body>
-  <div class="container one-column ">
+  <div class="container one-column  page-archive ">
     <div class="headband"></div>
 
     <div id="header" class="header">
@@ -92,14 +92,31 @@
 
           <div id="posts" class="posts-expand">
             
-  <div class="collection-title">
-    <h2 >
-      tips
-      <small>Tag</small>
-    </h2>
-  </div>
+
+  <span class="archive-move-on"></span>
+
+  <span class="archive-page-counter">
+    
+    
+     
+    
+    Um..! 2 posts in total. Keep on posting.
+  </span>
 
   
+
+    
+    
+    
+
+    
+      
+      <div class="collection-title">
+        <h2 class="archive-year motion-element" id="archive-year-2015">2015</h2>
+      </div>
+    
+    
+
     
 
   <div class="post post-type-normal ">
@@ -111,7 +128,7 @@
           
           
             
-              Python笔记
+              Vim笔记
             
           
         </h1>
@@ -120,7 +137,7 @@
       <div class="post-meta">
         <span class="post-time">
           
-            Posted on 2015-04-11
+            Posted on 2015-05-01
           
         </span>
 
@@ -129,7 +146,7 @@
             <span class="post-category">
               &nbsp; | &nbsp; In
               
-                <a href="/blog/categories/Python/">Python</a>
+                <a href="/blog/categories/vim/">vim</a>
 
                 
                 
@@ -143,8 +160,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/blog/1/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="1/"></span>
+            <a href="/blog/2/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2/"></span>
             </a>
           </span>
           
@@ -159,11 +176,60 @@
         
 
         
-          <h3 id="1-_Python二维数组的创建方式">1. Python二维数组的创建方式</h3>
-<p>创建一个3行2列的二维数组：</p>
-<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">list = [[<span class="number">0</span>]*<span class="number">2</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>)]</div></pre></td></tr></table></figure>
-
-<p>PS: 如果采用<code>[[0]*2]*3</code>创建二维数组，会出现浅拷贝问题，即赋值语句<code>list[0][1] = 1</code>会使得第二列都被赋值为1。</p>
+          <h3 id="Shortcut_Key:">Shortcut Key:</h3>
+<ul>
+<li><code>^E</code> - scroll the window down</li>
+<li><code>^y</code> - scroll the window up</li>
+<li><code>^F</code> - scroll down one page</li>
+<li><code>^B</code> - scroll up one page</li>
+<li><code>H</code> - move cursor to the top of the window</li>
+<li><code>M</code> - move cursor to the middle of the window</li>
+<li><code>L</code> - move cursor to teh bottom of the window</li>
+<li><code>gg</code> - go to top of file</li>
+<li><code>G</code> - go to bottom of file</li>
+<li><code>w</code> - go to the first character of next word</li>
+<li><code>e</code> - go to the last character of next word</li>
+<li><code>D/C</code> - delete/change until end of file</li>
+<li><code>^/$</code> - move to the beginning/end of line</li>
+<li><code>I/A</code> - move to the beginning/end of line and insert</li>
+<li><code>o/O</code> - insert new line above/below current line and insert</li>
+</ul>
+<p>Think of a file as more than individual characters</p>
+<p>text objects:</p>
+<ul>
+<li><code>w</code> - words</li>
+<li><code>s</code> - sentences</li>
+<li><code>p</code> - paragraphs</li>
+<li><code>t</code> - tags(available in XML/HEML files)</li>
+</ul>
+<p>motions:</p>
+<ul>
+<li><code>a</code> - all</li>
+<li><code>i</code> - in</li>
+<li><code>t</code> - till</li>
+<li><code>f</code> - find forward</li>
+<li><code>F</code> - find backward</li>
+</ul>
+<p>commands:</p>
+<ul>
+<li><code>d</code> - delete (also cut)</li>
+<li><code>c</code> - change (delete, then place in insert mode)</li>
+<li><code>y</code> - yank(copy)</li>
+<li><code>v</code> - visually select</li>
+</ul>
+<p><strong>commands + motions + text objects</strong></p>
+<p>such as <code>daw</code>, <code>diw</code>, <code>ciw</code>, <code>di[</code></p>
+<p>The Dot Command: repet last operate</p>
+<p><strong>Macro: A sequence of commands recorded to a register</strong><br>Record a macro:</p>
+<ul>
+<li>q{register}</li>
+<li>(do the things)</li>
+<li>q</li>
+</ul>
+<p>Play a macro:</p>
+<ul>
+<li>@{register}</li>
+</ul>
 
         
       </div>
@@ -174,12 +240,8 @@
         
           <div class="post-tags">
             
-              <a href="/blog/tags/Python/">
-                #Python
-              </a>
-            
-              <a href="/blog/tags/tips/">
-                #tips
+              <a href="/blog/tags/Vim/">
+                #Vim
               </a>
             
           </div>
@@ -192,6 +254,7 @@
       </div>
     
   </div>
+
 
 
   
@@ -530,6 +593,12 @@
 
 
   
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
 
   
 <script type="text/x-mathjax-config">

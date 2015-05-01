@@ -106,6 +106,152 @@
           
           
             
+              <a class="post-title-link" href="/blog/2/">
+                Vim笔记
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          
+            Posted on 2015-05-01
+          
+        </span>
+
+        
+          
+            <span class="post-category">
+              &nbsp; | &nbsp; In
+              
+                <a href="/blog/categories/vim/">vim</a>
+
+                
+                
+
+              
+            </span>
+          
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/blog/2/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    
+      <div class="post-body">
+
+        
+        
+
+        
+          
+            <h3 id="Shortcut_Key:">Shortcut Key:</h3>
+<ul>
+<li><code>^E</code> - scroll the window down</li>
+<li><code>^y</code> - scroll the window up</li>
+<li><code>^F</code> - scroll down one page</li>
+<li><code>^B</code> - scroll up one page</li>
+<li><code>H</code> - move cursor to the top of the window</li>
+<li><code>M</code> - move cursor to the middle of the window</li>
+<li><code>L</code> - move cursor to teh bottom of the window</li>
+<li><code>gg</code> - go to top of file</li>
+<li><code>G</code> - go to bottom of file</li>
+<li><code>w</code> - go to the first character of next word</li>
+<li><code>e</code> - go to the last character of next word</li>
+<li><code>D/C</code> - delete/change until end of file</li>
+<li><code>^/$</code> - move to the beginning/end of line</li>
+<li><code>I/A</code> - move to the beginning/end of line and insert</li>
+<li><code>o/O</code> - insert new line above/below current line and insert</li>
+</ul>
+<p>Think of a file as more than individual characters</p>
+<p>text objects:</p>
+<ul>
+<li><code>w</code> - words</li>
+<li><code>s</code> - sentences</li>
+<li><code>p</code> - paragraphs</li>
+<li><code>t</code> - tags(available in XML/HEML files)</li>
+</ul>
+<p>motions:</p>
+<ul>
+<li><code>a</code> - all</li>
+<li><code>i</code> - in</li>
+<li><code>t</code> - till</li>
+<li><code>f</code> - find forward</li>
+<li><code>F</code> - find backward</li>
+</ul>
+<p>commands:</p>
+<ul>
+<li><code>d</code> - delete (also cut)</li>
+<li><code>c</code> - change (delete, then place in insert mode)</li>
+<li><code>y</code> - yank(copy)</li>
+<li><code>v</code> - visually select</li>
+</ul>
+<p><strong>commands + motions + text objects</strong></p>
+<p>such as <code>daw</code>, <code>diw</code>, <code>ciw</code>, <code>di[</code></p>
+<p>The Dot Command: repet last operate</p>
+<p><strong>Macro: A sequence of commands recorded to a register</strong><br>Record a macro:</p>
+<ul>
+<li>q{register}</li>
+<li>(do the things)</li>
+<li>q</li>
+</ul>
+<p>Play a macro:</p>
+<ul>
+<li>@{register}</li>
+</ul>
+
+          
+        
+      </div>
+    
+
+    
+      <div class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/blog/tags/Vim/">
+                #Vim
+              </a>
+            
+          </div>
+        
+
+        
+
+        
+        
+          <div class="post-eof"></div>
+        
+      </div>
+    
+  </div>
+
+
+  
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/1/">
                 Python笔记
               </a>
@@ -196,97 +342,6 @@
 
 
   
-    
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/blog/hello-world/">
-                Hello World
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          
-            Posted on 2015-04-04
-          
-        </span>
-
-        
-          
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/blog/hello-world/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="hello-world/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    
-      <div class="post-body">
-
-        
-        
-
-        
-          
-            <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      </div>
-    
-
-    
-      <div class="post-footer">
-        
-
-        
-
-        
-        
-          <div class="post-eof"></div>
-        
-      </div>
-    
-  </div>
-
-
-  
 
           </div>
 
@@ -323,14 +378,14 @@
 
         <div class="site-state-item site-state-categories">
           <a href="/blog/categories">
-            <span class="site-state-item-count">1</span>
+            <span class="site-state-item-count">2</span>
             <span class="site-state-item-name">categories</span>
           </a>
         </div>
 
         <div class="site-state-item site-state-tags">
           
-            <span class="site-state-item-count">2</span>
+            <span class="site-state-item-count">3</span>
             <span class="site-state-item-name">tags</span>
           
         </div>
