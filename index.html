@@ -106,6 +106,113 @@
           
           
             
+              <a class="post-title-link" href="/blog/3/">
+                Java中的IO流
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          
+            Posted on 2015-05-28
+          
+        </span>
+
+        
+          
+            <span class="post-category">
+              &nbsp; | &nbsp; In
+              
+                <a href="/blog/categories/java/">java</a>
+
+                
+                
+
+              
+            </span>
+          
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/blog/3/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="3/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    
+      <div class="post-body">
+
+        
+        
+
+        
+          
+            <h3 id="按数据传输单位分类：">按数据传输单位分类：</h3>
+<ul>
+<li>字节流：以字节(8位二进制)为单位进行处理。主要用于读写诸如图像或者声音的二进制数据。字节流继承<code>InputStream</code>和<code>OutputStream</code>。</li>
+<li>字符流：以字符(16位二进制)位单位进行处理。字符流继承自<code>InputStreamReader</code>和<code>OutputStreamWriter</code>。</li>
+</ul>
+<h3 id="字符流和字节流有什么区别？">字符流和字节流有什么区别？</h3>
+<p>都是通过字节流的方式实现。字符流是对字节流进行了封装，方便操作。在底层中，所有的输入输出都是字节形式的。当字符向字节转换时，要注意编码问题，因为字符串转成字节数组。</p>
+<h3 id="什么是Java序列化，如何实现Java序列化？">什么是Java序列化，如何实现Java序列化？</h3>
+<p>Java提供了一种对象序列化的机制，该机制中，一个对象可以被表示为一个字节序列，该字节学列包括对象的数据，有关对象的类型的信息和存储在对象中数据的类型。将序列化对象写入文件后，可以从文件读取出来，然后对其进行反序列化，也就是说，对象的类型信息，对象的数据，还有对象中的数据类型可以用来在内存中新建对象。这整个过程是JVM独立的，也就是说在一个平台上序列化的对象，可以在另一个平台进行反序列化。</p>
+<p>在Java中，一个类实现了<code>java.io.Serializable</code>接口，那么它就可以被序列化。然后我们可以调用OutputStream的writeObject方法对对象进行保存，然后用readObject方法对保存的对象进行读取。</p>
+<p>更多内容：<a href="http://www.blogjava.net/jiangshachina/archive/2012/02/13/369898.html" target="_blank" rel="external">http://www.blogjava.net/jiangshachina/archive/2012/02/13/369898.html</a></p>
+
+          
+        
+      </div>
+    
+
+    
+      <div class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/blog/tags/Java/">
+                #Java
+              </a>
+            
+              <a href="/blog/tags/Interview/">
+                #Interview
+              </a>
+            
+          </div>
+        
+
+        
+
+        
+        
+          <div class="post-eof"></div>
+        
+      </div>
+    
+  </div>
+
+
+  
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/blog/2/">
                 Vim笔记
               </a>
@@ -371,21 +478,21 @@
       <div class="site-state motion-element">
         <div class="site-state-item site-state-posts">
           <a href="/blog/archives">
-            <span class="site-state-item-count">2</span>
+            <span class="site-state-item-count">3</span>
             <span class="site-state-item-name">posts</span>
           </a>
         </div>
 
         <div class="site-state-item site-state-categories">
           <a href="/blog/categories">
-            <span class="site-state-item-count">2</span>
+            <span class="site-state-item-count">3</span>
             <span class="site-state-item-name">categories</span>
           </a>
         </div>
 
         <div class="site-state-item site-state-tags">
           
-            <span class="site-state-item-count">3</span>
+            <span class="site-state-item-count">5</span>
             <span class="site-state-item-name">tags</span>
           
         </div>
